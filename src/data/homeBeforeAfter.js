@@ -1,0 +1,16 @@
+export const homeBeforeAfterPairs = [
+  { id: 'pair-01', title: 'Liposuction', before: '/images/home-before-after/pair-01-before.jpg', after: '/images/home-before-after/pair-01-after.jpg' },
+  { id: 'pair-02', title: 'Before After 2 Orthosquare Edited 2', before: '/images/home-before-after/pair-02-before.jpg', after: '/images/home-before-after/pair-02-after.jpg' },
+  { id: 'pair-03', title: 'Before After Ortho Square Edited 1', before: '/images/home-before-after/pair-03-before.jpg', after: '/images/home-before-after/pair-03-after.jpg' },
+  { id: 'pair-04', title: 'Pre Post For Lipo', before: '/images/home-before-after/pair-04-before.jpg', after: '/images/home-before-after/pair-04-after.jpg' },
+  { id: 'pair-05', title: 'Collage 2022 11 09 13 35 11', before: '/images/home-before-after/pair-05-before.jpg', after: '/images/home-before-after/pair-05-after.jpg' },
+  { id: 'pair-06', title: 'Collage 2023 11 02 19 24 26', before: '/images/home-before-after/pair-06-before.jpg', after: '/images/home-before-after/pair-06-after.jpg' },
+  { id: 'pair-07', title: 'Collage 2023 11 03 13 09 14', before: '/images/home-before-after/pair-07-before.jpg', after: '/images/home-before-after/pair-07-after.jpg' },
+  { id: 'pair-08', title: 'Collage 2023 11 03 13 10 32', before: '/images/home-before-after/pair-08-before.jpg', after: '/images/home-before-after/pair-08-after.jpg' },
+  { id: 'pair-09', title: 'Collage 2024 09 28 15 41 31', before: '/images/home-before-after/pair-09-before.jpg', after: '/images/home-before-after/pair-09-after.jpg' },
+  { id: 'pair-10', title: 'Collage 2025 03 19 18 28 10', before: '/images/home-before-after/pair-10-before.jpg', after: '/images/home-before-after/pair-10-after.jpg' },
+  { id: 'pair-11', title: 'Treatment Results', before: '/images/home-before-after/pair-11-before.jpg', after: '/images/home-before-after/pair-11-after.jpg' },
+  { id: 'pair-12', title: 'Treatment Results', before: '/images/home-before-after/pair-12-before.jpg', after: '/images/home-before-after/pair-12-after.jpg' },
+  { id: 'pair-13', title: 'Treatment Results', before: '/images/home-before-after/pair-13-before.jpg', after: '/images/home-before-after/pair-13-after.jpg' },
+  { id: 'pair-14', title: 'Treatment Results', before: '/images/home-before-after/pair-14-before.jpg', after: '/images/home-before-after/pair-14-after.jpg' },
+];
