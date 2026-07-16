@@ -180,6 +180,9 @@ html {
     padding: 0.6rem 0.7rem;
     max-height: 22rem;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+    touch-action: pan-y;
     opacity: 0;
     visibility: hidden;
     transform: translateX(-50%) translateY(8px);
@@ -239,18 +242,38 @@ html {
 }
 
 .mobile-services-panel {
-    margin: 0.7rem auto 0;
-    width: min(96vw, 1120px);
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    margin: 0;
+    padding: 1rem;
+    width: 100vw;
+    background: rgba(8, 15, 13, 0.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overscroll-behavior: contain;
+}
+
+
+.mobile-services-grid {
+    width: min(96vw, 720px);
+    max-height: calc(100vh - 2.5rem);
+    display: grid;
+    gap: 1rem;
     border-radius: 1rem;
     border: 1px solid hsl(var(--border));
     background: #f4f4f4;
     padding: 1rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+    touch-action: pan-y;
+    box-shadow: 0 18px 40px rgba(16, 34, 31, 0.25);
 }
 
-.mobile-services-grid {
-    display: grid;
-    gap: 1rem;
-}
 
 .mobile-services-column {
     border-bottom: 1px solid rgba(40, 44, 43, 0.08);
@@ -709,6 +732,47 @@ html {
     line-height: 1.56;
 }
 
+.service-highlight-banner {
+    border: 1px solid rgba(45, 90, 82, 0.22);
+    border-radius: 1.2rem;
+    background: linear-gradient(135deg, rgba(45, 90, 82, 0.12), rgba(186, 152, 111, 0.16));
+    color: hsl(var(--primary));
+    font-family: var(--font-heading);
+    font-size: clamp(1.45rem, 3vw, 2.35rem);
+    line-height: 1.15;
+    padding: clamp(1.2rem, 2.5vw, 1.8rem);
+    box-shadow: 0 14px 28px rgba(20, 37, 34, 0.08);
+}
+
+.service-points-wrap {
+    display: grid;
+    gap: 1rem;
+}
+
+.service-point-section {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.service-point-list {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.service-point-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.7rem;
+    align-items: start;
+}
+
+.service-point-item .service-icon {
+    margin-top: 0.18rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+}
+
 .before-after-card {
     border: 1px solid hsl(var(--border));
     background: rgba(255, 255, 255, 0.72);
@@ -811,7 +875,7 @@ html {
     font-size: 0.92rem;
 }
 
-/* ── Doctor Page Premium Styles ── */
+/* Doctor Page Premium Styles */
 .doctor-hero-banner {
     position: relative;
     background: linear-gradient(135deg, #4b7987, #3d6570);
@@ -1583,7 +1647,7 @@ html {
     align-items: stretch;
 }
 
-/* ── FAQ Accordion ── */
+/* FAQ Accordion */
 .faq-accordion {
     display: grid;
     gap: 0;
@@ -1638,7 +1702,7 @@ html {
     line-height: 1.75;
 }
 
-/* ── Service Page Carousel ── */
+/* Service Page Carousel */
 
 .service-hero-clean {
     padding: 6rem 1.5rem 1.5rem;
@@ -1858,3 +1922,4 @@ html {
         display: none;
     }
 }
+

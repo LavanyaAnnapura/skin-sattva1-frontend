@@ -16,6 +16,18 @@ export const SiteHeader = () => {
 
   const getColumnServices = (categories) => categories.flatMap((category) => getServicesByCategory(category));
 
+  const handleServicesMenuWheel = (event) => {
+    const menu = event.currentTarget;
+
+    if (menu.scrollHeight <= menu.clientHeight) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    menu.scrollTop += event.deltaY;
+  };
+
   useEffect(() => {
     const onScroll = () => {
       setIsScrolled(window.scrollY > 16);
@@ -25,6 +37,25 @@ export const SiteHeader = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Lock body scroll when the mobile services sheet is open so the page behind stays fixed
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+    const originalPaddingRight = document.body.style.paddingRight;
+
+    if (mobileServicesOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden";
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
+    }
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.paddingRight = originalPaddingRight;
+    };
+  }, [mobileServicesOpen]);
 
   return (
     <header className="sticky top-4 z-50 px-4 md:px-8" data-testid="website-header">
@@ -51,7 +82,11 @@ export const SiteHeader = () => {
               Services <ChevronDown size={14} aria-hidden="true" />
             </NavLink>
 
-            <div className={`services-dropdown ${showServicesMenu ? "is-open" : ""}`} data-testid="services-dropdown-menu">
+            <div
+              className={`services-dropdown ${showServicesMenu ? "is-open" : ""}`}
+              onWheel={handleServicesMenuWheel}
+              data-testid="services-dropdown-menu"
+            >
               <div className="services-dropdown-panel" data-testid="services-dropdown-panel">
                 {servicesColumns.map((column) => (
                   <div className="services-column" key={column.key} data-testid={`services-column-${column.key}`}>
@@ -117,7 +152,11 @@ export const SiteHeader = () => {
 
       {mobileServicesOpen && (
         <div className="mobile-services-panel lg:hidden" data-testid="mobile-services-panel">
-          <div className="mobile-services-grid" data-testid="mobile-services-grid">
+          <div
+            className="mobile-services-grid"
+            onWheel={handleServicesMenuWheel}
+            data-testid="mobile-services-grid"
+          >
             {servicesColumns.map((column) => (
               <div className="mobile-services-column" key={column.key} data-testid={`mobile-services-column-${column.key}`}>
                 <p className="services-column-title" data-testid={`mobile-services-column-title-${column.key}`}>

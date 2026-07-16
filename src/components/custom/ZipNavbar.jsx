@@ -28,6 +28,18 @@ export const ZipNavbar = () => {
     }, 120);
   };
 
+  const handleServicesMenuWheel = (event) => {
+    const menu = event.currentTarget;
+
+    if (menu.scrollHeight <= menu.clientHeight) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    menu.scrollTop += event.deltaY;
+  };
+
   return (
     <header className="sticky top-4 z-50 px-4 md:px-8" data-testid="zip-navbar-header">
       <nav
@@ -64,7 +76,11 @@ export const ZipNavbar = () => {
             <button type="button" onClick={() => goToSection("services")} className="nav-link services-trigger plain-button" data-testid="zip-nav-services">
               Services <ChevronDown size={14} aria-hidden="true" />
             </button>
-            <div className={`services-dropdown ${showServices ? "is-open" : ""}`} data-testid="zip-services-dropdown">
+            <div
+              className={`services-dropdown ${showServices ? "is-open" : ""}`}
+              onWheel={handleServicesMenuWheel}
+              data-testid="zip-services-dropdown"
+            >
               {serviceCategories.map((category) => (
                 <div key={category.key} className="mb-2 last:mb-0" data-testid={`zip-services-category-${category.key}`}>
                   <p className="px-2 pt-1 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground" data-testid={`zip-services-category-label-${category.key}`}>

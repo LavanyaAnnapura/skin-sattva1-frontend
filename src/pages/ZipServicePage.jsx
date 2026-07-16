@@ -129,6 +129,8 @@ export const ZipServicePage = () => {
   const supportImage = service.content.supportImage || detailPool[serviceIndex % detailPool.length];
 
   const existingSections = service.content.sections || [];
+  const pointSections = service.content.pointSections || [];
+  const hasPointSections = pointSections.length > 0;
 
   const structuredContent = {
     overview:
@@ -189,23 +191,41 @@ export const ZipServicePage = () => {
 
       <section className="mx-auto grid max-w-5xl gap-8 px-6 py-12 lg:grid-cols-3 md:px-10" data-testid="zip-service-content-section">
         <div className="stagger-grid space-y-8 lg:col-span-2" data-testid="zip-service-main-content">
+          {service.content.highlightText && (
+            <RevealBlock>
+              <div className="service-highlight-banner" data-testid="zip-service-highlight">
+                {service.content.highlightText}
+              </div>
+            </RevealBlock>
+          )}
+
           <RevealBlock>
             <p className="section-body" data-testid="zip-service-overview">{structuredContent.overview}</p>
           </RevealBlock>
 
-          <RevealBlock>
-            <div className="service-image-card" data-testid="zip-service-support-image-card">
-              <img
-                src={supportImage}
-                alt={`${service.title} related treatment visual`}
-                className="service-image-clean"
-                onError={(event) => {
-                  event.currentTarget.src = fallbackCategoryImage;
-                }}
-                data-testid="zip-service-support-image"
-              />
-            </div>
-          </RevealBlock>
+          {service.content.leadCta && (
+            <RevealBlock className="flex flex-wrap gap-3" delay={0.05}>
+              <Link to={service.content.leadCta.to} className="cta-button" data-testid="zip-service-lead-cta">
+                {service.content.leadCta.label}
+              </Link>
+            </RevealBlock>
+          )}
+
+          {!hasPointSections && (
+            <RevealBlock>
+              <div className="service-image-card" data-testid="zip-service-support-image-card">
+                <img
+                  src={supportImage}
+                  alt={`${service.title} related treatment visual`}
+                  className="service-image-clean"
+                  onError={(event) => {
+                    event.currentTarget.src = fallbackCategoryImage;
+                  }}
+                  data-testid="zip-service-support-image"
+                />
+              </div>
+            </RevealBlock>
+          )}
 
           {service.content.carouselImages?.length > 0 && (
             <RevealBlock>
@@ -213,36 +233,62 @@ export const ZipServicePage = () => {
             </RevealBlock>
           )}
 
-          <RevealBlock>
-            <article className="category-card" data-testid="zip-service-how-it-works-card">
-              <h2 className="service-title" data-testid="zip-service-how-it-works-heading">How It Works</h2>
-              <p className="service-description" data-testid="zip-service-how-it-works-body">{structuredContent.howItWorks}</p>
-            </article>
-          </RevealBlock>
-
-          <RevealBlock>
-            <h3 className="service-title" data-testid="zip-service-benefits-heading">Benefits</h3>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2" data-testid="zip-service-benefits-grid">
-              {structuredContent.benefits.map((benefit, index) => (
-                <article className="service-list-card" key={benefit} data-testid={`zip-service-benefit-${index + 1}`}>
-                  <CheckCircle2 className="service-icon" aria-hidden="true" />
-                  <p className="service-list-text" data-testid={`zip-service-benefit-text-${index + 1}`}>{benefit}</p>
-                </article>
+          {hasPointSections && (
+            <div className="service-points-wrap" data-testid="zip-service-point-sections">
+              {pointSections.map((section, sectionIndex) => (
+                <RevealBlock key={section.heading} delay={Math.min(sectionIndex * 0.03, 0.18)}>
+                  <article className="category-card service-point-section" data-testid={`zip-service-point-section-${sectionIndex + 1}`}>
+                    <h2 className="service-title" data-testid={`zip-service-point-heading-${sectionIndex + 1}`}>{section.heading}</h2>
+                    <div className="service-point-list" data-testid={`zip-service-point-list-${sectionIndex + 1}`}>
+                      {section.points.map((point, pointIndex) => (
+                        <div className="service-point-item" key={point} data-testid={`zip-service-point-${sectionIndex + 1}-${pointIndex + 1}`}>
+                          <CheckCircle2 className="service-icon" aria-hidden="true" />
+                          <p className="service-list-text">{point}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                </RevealBlock>
               ))}
             </div>
-          </RevealBlock>
+          )}
 
-          <RevealBlock>
-            <article className="category-card" data-testid="zip-service-who-can-opt-card">
-              <h3 className="service-title" data-testid="zip-service-who-can-opt-heading">Who Can Opt for This Treatment?</h3>
-              <p className="service-description" data-testid="zip-service-who-can-opt-body">{structuredContent.whoCanOpt}</p>
-            </article>
-          </RevealBlock>
+          {!hasPointSections && (
+            <>
+              <RevealBlock>
+                <article className="category-card" data-testid="zip-service-how-it-works-card">
+                  <h2 className="service-title" data-testid="zip-service-how-it-works-heading">How It Works</h2>
+                  <p className="service-description" data-testid="zip-service-how-it-works-body">{structuredContent.howItWorks}</p>
+                </article>
+              </RevealBlock>
 
-          {service.content.comparisonTable && (
+              <RevealBlock>
+                <h3 className="service-title" data-testid="zip-service-benefits-heading">Benefits</h3>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2" data-testid="zip-service-benefits-grid">
+                  {structuredContent.benefits.map((benefit, index) => (
+                    <article className="service-list-card" key={benefit} data-testid={`zip-service-benefit-${index + 1}`}>
+                      <CheckCircle2 className="service-icon" aria-hidden="true" />
+                      <p className="service-list-text" data-testid={`zip-service-benefit-text-${index + 1}`}>{benefit}</p>
+                    </article>
+                  ))}
+                </div>
+              </RevealBlock>
+
+              <RevealBlock>
+                <article className="category-card" data-testid="zip-service-who-can-opt-card">
+                  <h3 className="service-title" data-testid="zip-service-who-can-opt-heading">Who Can Opt for This Treatment?</h3>
+                  <p className="service-description" data-testid="zip-service-who-can-opt-body">{structuredContent.whoCanOpt}</p>
+                </article>
+              </RevealBlock>
+            </>
+          )}
+
+          {service.content.comparisonTable && (!hasPointSections || service.content.showComparisonTableWithPoints) && (
             <RevealBlock>
               <article className="category-card" data-testid="zip-service-comparison-table-card">
-                <h3 className="service-title" data-testid="zip-service-comparison-heading">Comparison of FUE Techniques</h3>
+                <h3 className="service-title" data-testid="zip-service-comparison-heading">
+                  {service.content.comparisonTable.title || "Comparison of FUE Techniques"}
+                </h3>
                 <div className="mt-4 overflow-x-auto" data-testid="zip-service-comparison-table">
                   <table className="w-full text-left border-collapse" style={{ fontSize: "0.85rem" }}>
                     <thead>
@@ -267,12 +313,14 @@ export const ZipServicePage = () => {
             </RevealBlock>
           )}
 
-          <RevealBlock>
-            <article className="category-card" data-testid="zip-service-why-skinsattva-card">
-              <h3 className="service-title" data-testid="zip-service-why-skinsattva-heading">Why Skin Sattva?</h3>
-              <p className="service-description" data-testid="zip-service-why-skinsattva-body">{structuredContent.whySkinSattva}</p>
-            </article>
-          </RevealBlock>
+          {!hasPointSections && (
+            <RevealBlock>
+              <article className="category-card" data-testid="zip-service-why-skinsattva-card">
+                <h3 className="service-title" data-testid="zip-service-why-skinsattva-heading">Why Skin Sattva?</h3>
+                <p className="service-description" data-testid="zip-service-why-skinsattva-body">{structuredContent.whySkinSattva}</p>
+              </article>
+            </RevealBlock>
+          )}
 
           {service.content.beforeAfterImages?.length > 0 && (
             <RevealBlock>
@@ -281,16 +329,18 @@ export const ZipServicePage = () => {
             </RevealBlock>
           )}
 
-          <RevealBlock>
-            <article className="category-card" data-testid="zip-service-faq-card">
-              <h3 className="service-title" data-testid="zip-service-faq-heading">FAQs</h3>
-              <div className="faq-accordion mt-4" data-testid="zip-service-faq-list">
-                {structuredContent.faqs.map((faq, index) => (
-                  <FaqAccordionItem faq={faq} index={index} serviceSlug={service.slug} key={`${service.slug}-faq-${index + 1}`} />
-                ))}
-              </div>
-            </article>
-          </RevealBlock>
+          {!hasPointSections && (
+            <RevealBlock>
+              <article className="category-card" data-testid="zip-service-faq-card">
+                <h3 className="service-title" data-testid="zip-service-faq-heading">FAQs</h3>
+                <div className="faq-accordion mt-4" data-testid="zip-service-faq-list">
+                  {structuredContent.faqs.map((faq, index) => (
+                    <FaqAccordionItem faq={faq} index={index} serviceSlug={service.slug} key={`${service.slug}-faq-${index + 1}`} />
+                  ))}
+                </div>
+              </article>
+            </RevealBlock>
+          )}
 
         </div>
 

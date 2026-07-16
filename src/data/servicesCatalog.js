@@ -141,6 +141,10 @@ const allServices = [
     category: "hair",
     shortDescription: "Bio-FUE, Sapphire FUE, DHI and AHI techniques for natural high-density outcomes.",
     content: {
+      leadCta: {
+        label: "Restore Your Hair, Renew Your Confidence!",
+        to: "/contact#booking-form-section",
+      },
       overview:
         "At Skin Sattva, we are dedicated to understanding the science behind hair loss, and we specialize in scientifically proven hair restoration techniques that deliver long-lasting, natural-looking results. Whether you're struggling with a receding hairline, thinning hair, or baldness, Skin Sattva is your one-stop solution for all your hair needs. Our team of experts uses the latest advancements in hair restoration to provide personalized treatments that will help you regain your hair and confidence, so you can feel like yourself again.",
       sections: [
@@ -183,6 +187,140 @@ const allServices = [
         {
           heading: "Why Skin Sattva?",
           body: "State-of-the-art OT. Surgery by qualified dermatologist. No false claims. Authentic techniques. Personalized care. Free consultation available.",
+        },
+      ],
+      pointSections: [
+        {
+          heading: "Hair Transplantation at Skin Sattva",
+          points: [
+            "Restore your hair, renew your confidence.",
+            "Science-backed solutions for receding hairline, thinning hair, and baldness.",
+            "Long-lasting, natural-looking results using proven hair restoration techniques.",
+            "Personalized treatment planning to help restore hair and confidence.",
+            "State-of-the-art OT surgery by a qualified dermatologist.",
+            "Authentic techniques, personalized care, and no false claims.",
+            "Free consultation support is available for lead generation and treatment planning.",
+          ],
+        },
+        {
+          heading: "What is Hair Transplantation?",
+          points: [
+            "Hair follicles are moved from a healthy donor area to areas with thinning or no hair.",
+            "The transplanted follicles grow naturally and look like your own hair.",
+            "Over time, transplanted hair continues to grow and can be styled like the rest of your hair.",
+          ],
+        },
+        {
+          heading: "Why Choose Hair Transplantation?",
+          points: [
+            "Permanent results: transplanted follicles continue to grow naturally for a lifetime.",
+            "Natural-looking hair: new hair blends seamlessly with existing hair.",
+            "Minimal scarring: advanced FUE techniques avoid visible linear scars.",
+            "Increased confidence: fuller natural hair can improve self-esteem.",
+            "Less downtime: most patients can resume activities within a few days.",
+          ],
+        },
+        {
+          heading: "Traditional Follicular Unit Excision (FUE)",
+          points: [
+            "This is one of the advanced hair transplant methods offered to suit unique patient needs.",
+            "Individual hair follicles are extracted from the donor area using tiny punches.",
+            "Follicles are arranged as grafts, cleaned, preserved, and implanted into the recipient area.",
+            "No visible linear scar because no long incision is made.",
+            "Quicker recovery with minimal discomfort.",
+            "Natural and seamless results.",
+          ],
+        },
+        {
+          heading: "Sapphire FUE",
+          points: [
+            "Specialized sapphire blades create precise slits in the recipient area.",
+            "Better control over direction, angle, and density of hair follicles.",
+            "High-density, natural-looking hair restoration.",
+            "Imported refined instruments support optimal graft survival of up to 85-90%.",
+            "Each technique offers unique advantages based on patient needs and expectations.",
+          ],
+        },
+        {
+          heading: "Bio-Sapphire FUE",
+          points: [
+            "Advanced technique designed for precision, density, and rapid recovery.",
+            "Topical anaesthesia cream, vibration therapy, and calming music improve comfort.",
+            "Sapphire blades create precise slits for high density with minimal bleeding.",
+            "Imported serrated punches reduce graft wastage and transection.",
+            "Grafts are preserved in a growth factor-enriched medium to improve survival.",
+            "No-root-touch implantation with double forceps supports natural-looking results.",
+            "Graft survival can reach 90-95% with faster, denser growth and minimal shedding.",
+          ],
+        },
+        {
+          heading: "Direct Hair Implantation (DHI)",
+          points: [
+            "Follicles are implanted directly using Choi or KEEP implanters without pre-made slits.",
+            "Highly precise implantation for natural-looking results.",
+            "Minimal out-of-body time for grafts.",
+            "Minimal or no bleeding.",
+            "Faster results than other methods.",
+          ],
+        },
+        {
+          heading: "Aesthetic Hair Integration (AHI)",
+          points: [
+            "Developed by Dr. Shrenik after extensive research.",
+            "New grafts are integrated with existing hair without disturbing natural aesthetics.",
+            "High-quality grafts are harvested using Devroye's punches to prevent damage and wastage.",
+            "Grafts are stored in HypothermosolR solution to maintain natural conditions.",
+            "Sapphire blades create precise channels without harming existing hair.",
+            "No-root-touch technique and Essilor Loupes help maximize precision and density.",
+            "Newly implanted grafts blend seamlessly, making the transplant difficult to detect.",
+          ],
+        },
+        {
+          heading: "Comparison of FUE Techniques",
+          points: [
+            "Comfort during anaesthesia: Sapphire FUE is good, Bio-Sapphire FUE is very high, and AHI is virtually painless.",
+            "Extraction: Sapphire FUE uses sharp punches, Bio-Sapphire FUE uses serrated Magna punches, and AHI uses Devroye's punches.",
+            "Slit making: Sapphire FUE uses CTS blades, while Bio-Sapphire FUE and AHI use sapphire blades.",
+            "Instruments: Sapphire FUE uses stainless steel forceps, while Bio-Sapphire FUE and AHI use titanium forceps.",
+            "Magnifiers: not used in Sapphire FUE, used in Bio-Sapphire FUE, and Essilor Loupes are used in AHI.",
+            "Graft holding solution: Sapphire FUE uses Ringer Lactate, Bio-Sapphire FUE uses Ringer Lactate + GFC, and AHI uses Hypothermosol + GFC.",
+            "Implantation: Sapphire FUE and Bio-Sapphire FUE use double forceps, while AHI uses Choi implanters.",
+            "Graft survival rate: Sapphire FUE offers 85-90%, Bio-Sapphire FUE offers 90-95%, and AHI offers up to 98%.",
+            "Density: Sapphire FUE gives high density, Bio-Sapphire FUE gives very high density, and AHI gives the highest density.",
+            "Appearance: Sapphire FUE looks natural, Bio-Sapphire FUE looks natural-looking, and AHI is unrecognizable as transplanted.",
+            "Damage to existing hair: Sapphire FUE has a slight chance, Bio-Sapphire FUE has minimal risk, and AHI has none.",
+          ],
+        },
+        {
+          heading: "Who is a Good Candidate?",
+          points: [
+            "Men and women experiencing hair loss can benefit from hair transplantation.",
+            "You have sufficient donor hair from the back or sides of the scalp.",
+            "Your hair loss has stabilized and you want a permanent solution.",
+            "You are in good general health without conditions that interfere with healing.",
+            "You have realistic expectations about the results.",
+          ],
+        },
+        {
+          heading: "The Hair Transplant Process",
+          points: [
+            "Initial Consultation: scalp is assessed using a trichoscope, hair loss grade is determined, and a plan is made around your goals.",
+            "Hairline Design: the hairline is designed and discussed before the procedure.",
+            "Lab Tests and Booking: routine lab tests are done, and once reports are normal, the procedure date is reserved.",
+            "Preparation: on the day of procedure, the scalp is reassessed, cleaned, and local anaesthesia is given for comfort.",
+            "Procedure: follicles are extracted and implanted with precision; the procedure may take a few hours to a full day.",
+            "Aftercare and Recovery: detailed aftercare instructions are provided, with most patients returning to normal activities in 5-7 days.",
+            "Follow-Up Care: progress is monitored, and full results are usually visible within 6-12 months.",
+          ],
+        },
+        {
+          heading: "Frequently Asked Questions",
+          points: [
+            "Is the hair transplant procedure painful? Thanks to local anesthesia, the procedure itself is virtually painless. Mild swelling or tenderness afterward is temporary and manageable.",
+            "How soon will I see results? Hair growth usually begins within 3-4 months, noticeable results appear in about 6-12 months, and full results are generally visible within a year.",
+            "Will the transplanted hair last? Yes. Once transplanted, the follicles are resistant to DHT, so the results are permanent.",
+            "How many treatments will I need? Some patients need one session, while advanced baldness with limited donor area may require two staged sessions.",
+          ],
         },
       ],
       comparisonTable: {
@@ -264,22 +402,137 @@ const allServices = [
     category: "aesthetics",
     shortDescription: "Advanced diode and Nd:YAG based protocols for long-term hair reduction.",
     content: {
-      overview: "Laser hair reduction is a safe, effective procedure to target hair follicles and significantly reduce unwanted hair growth over sessions. At Skin Sattva, we use advanced Diode, Alexandrite, and LP Nd:YAG laser systems suitable for all skin types.",
+      highlightText: "Ditch Razor. Ditch Waxing. Smooth Skin That Lasts.",
+      leadCta: {
+        label: "Book Your Consultation",
+        to: "/contact#booking-form-section",
+      },
+      overview: "Hairs have to be optimum at the right place and in right number. A headful of hairs gives that youthful look. But excess hairs on face especially in women are unwanted and frustrating. One will have to remove them frequently with razors, threading and waxing which may lead to ingrown hairs and rough skin. At Skin Sattva, we offer advanced Laser Hair Reduction using the latest Triple Wavelength Diode Laser technology, designed to safely and effectively reduce unwanted hair on all skin types.",
       sections: [
         {
-          heading: "How Laser Hair Reduction Works",
-          body: "The laser targets melanin in the hair follicle, generating heat that damages the follicle and reduces future growth. Multiple sessions are needed because hair grows in different cycles, and the laser is most effective during the active growth phase.",
+          heading: "What is Laser Hair Reduction?",
+          body: "Laser Hair Reduction (LHR) is a medical procedure that uses concentrated laser energy to target and destroy hair follicles responsible for hair growth. The laser selectively heats the melanin present in the hair roots, damaging them while leaving the surrounding skin unharmed. Over multiple sessions, hair growth becomes thinner, lighter, and significantly reduced. Laser hair reduction does not remove hair permanently in a single session but provides long-term hair reduction with smoother skin.",
         },
         {
-          heading: "Technology We Use",
-          body: "Suitable protocols across all skin types with cooling-supported comfort systems. Our advanced laser platforms ensure fast treatment sessions with minimal discomfort and quick recovery.",
+          heading: "Why Choose Skin Sattva for Laser Hair Reduction?",
+          body: "At Skin Sattva, treatments are performed under the supervision of experienced dermatologist using advanced laser technology. Our treatment uses latest Triple Wavelength Diode Laser technology, is safe for Indian skin types, has minimal discomfort with advanced cooling system, and is performed in a hygienic and comforting clinical environment.",
         },
         {
           heading: "Who Can Get It Done?",
-          body: "Laser hair reduction is suitable for men and women looking to reduce unwanted facial or body hair. A consultation helps determine the best protocol based on skin type, hair color, and treatment area.",
+          body: "Anyone male or female above the age of 14 with excess unwanted hairs can get the laser done. It can be done in those with ingrown hairs and those looking for long-term hair reduction. A consultation at Skin Sattva will help determine the best treatment plan for your skin and hair type.",
         },
       ],
-      benefits: ["Long-term hair reduction", "Suitable for all skin types", "Minimal discomfort", "No downtime", "Fast sessions", "Cooling-supported comfort"],
+      pointSections: [
+        {
+          heading: "Ditch Razor. Ditch Waxing.",
+          points: [
+            "Smooth skin that lasts.",
+            "Say goodbye to the endless cycle of razors and waxing.",
+            "Say hello to effortlessly smooth skin.",
+            "Excess hairs on the face, especially in women, can be unwanted and frustrating.",
+            "Frequent razors, threading, and waxing may lead to ingrown hairs and rough skin.",
+          ],
+        },
+        {
+          heading: "Laser Hair Reduction at Skin Sattva",
+          points: [
+            "Skin Sattva offers advanced Laser Hair Reduction using latest Triple Wavelength Diode Laser technology.",
+            "The treatment is designed to safely and effectively reduce unwanted hair on all skin types.",
+            "It delivers long-lasting smooth skin with minimal discomfort and no downtime.",
+            "Treatments are performed under the supervision of experienced dermatologist using advanced laser technology.",
+          ],
+        },
+        {
+          heading: "What is Laser Hair Reduction?",
+          points: [
+            "Laser Hair Reduction (LHR) is a medical procedure that uses concentrated laser energy to target hair follicles responsible for hair growth.",
+            "The laser selectively heats the melanin present in the hair roots.",
+            "This damages the hair follicle while leaving the surrounding skin unharmed.",
+            "Over multiple sessions, hair growth becomes thinner, lighter, and significantly reduced.",
+            "Laser hair reduction does not remove hair permanently in a single session.",
+            "It provides long-term hair reduction with smoother skin.",
+          ],
+        },
+        {
+          heading: "Why Choose Skin Sattva?",
+          points: [
+            "Latest Triple Wavelength Diode Laser technology.",
+            "Safe for Indian skin types.",
+            "Minimal discomfort with advanced cooling system.",
+            "Dermatologist performed sessions.",
+            "Hygienic and comforting clinical environment.",
+          ],
+        },
+        {
+          heading: "Triple Wavelength Diode Laser Technology",
+          points: [
+            "The advanced laser combines three powerful wavelengths in a single treatment.",
+            "755 nm Alexandrite wavelength targets superficial hair and works best for finer hair.",
+            "810 nm gold standard wavelength provides effective hair reduction for most hair types.",
+            "1064 nm Nd:YAG wavelength penetrates deeper hair follicles and is safest for darker skin tones.",
+            "This combination treats different hair depths and thickness simultaneously.",
+            "It helps achieve better outcomes and faster sessions.",
+          ],
+        },
+        {
+          heading: "Areas That Can Be Treated",
+          points: [
+            "Face including upper lip, chin, and sideburns.",
+            "Underarms.",
+            "Arms.",
+            "Legs.",
+            "Bikini line.",
+            "Full body.",
+            "Chest and back for men.",
+            "Abdomen.",
+          ],
+        },
+        {
+          heading: "How Many Sessions Are Required?",
+          points: [
+            "Hair grows in cycles, and laser treatment is effective during the active growth phase.",
+            "Multiple sessions are required to see visible reduction.",
+            "Most patients require 8-10 sessions spaced 4-6 weeks apart for optimal hair reduction.",
+            "Maintenance sessions may be recommended depending on individual hair growth patterns.",
+          ],
+        },
+        {
+          heading: "Is the Procedure Painful?",
+          points: [
+            "With the latest cold sapphire handpiece, pain is almost negligible.",
+            "The process is very comfortable.",
+          ],
+        },
+        {
+          heading: "Benefits of Laser Hair Reduction",
+          points: [
+            "Long-term hair reduction.",
+            "Smoother skin.",
+            "Reduction in ingrown hairs.",
+            "Reduced pigmentation from shaving or waxing.",
+            "Quick treatment sessions.",
+            "No downtime.",
+          ],
+        },
+        {
+          heading: "Who Can Get LHR Done?",
+          points: [
+            "Anyone male or female above the age of 14 with excess unwanted hairs can get the laser done.",
+            "It can be done for those with ingrown hairs.",
+            "It is suitable for those looking for long-term hair reduction.",
+            "A consultation at Skin Sattva helps determine the best treatment plan for your skin and hair type.",
+          ],
+        },
+        {
+          heading: "Book Your Consultation",
+          points: [
+            "Book your consultation to fill in your details and plan the right laser hair reduction protocol.",
+            "Before and after images can be shown at the end of the page.",
+            "Results and testimonials can be highlighted for patient confidence.",
+          ],
+        },
+      ],
+      benefits: ["Long-term hair reduction", "Smoother skin", "Reduction in ingrown hairs", "Reduced pigmentation from shaving or waxing", "Quick treatment sessions", "No downtime"],
       supportImage: "/images/service-detail/laser-hair-reduction-detail.jpg",
       beforeAfterImages: [
         { src: "/images/service-detail/lhr-ba-1.jpg", alt: "Laser hair reduction before and after" },
@@ -353,23 +606,119 @@ const allServices = [
     category: "aesthetics",
     shortDescription: "Medical-grade facials including Vampire and Oxygeneo protocols.",
     content: {
+      highlightText: "Relax. Rejuvenate. Reveal your glow.",
+      leadCta: {
+        label: "Book Your Medifacial",
+        to: "/contact#booking-form-section",
+      },
       overview:
-        "Medifacials are dermatologist-guided facial protocols designed to improve hydration, glow, pore quality, and skin texture while keeping skin barrier health protected.",
+        "Skin Sattva has come up with tailor-made, medical grade facials specially designed by Dr Shrenik. These facials are unique because they offer a spa-like experience with actual visible results. They are suited for anyone having an event or for those who want to maintain their skin quality.",
       sections: [
         {
-          heading: "Approach",
-          body: "Each session is personalized using medical-grade products and devices such as Oxygeneo or regenerative facial protocols based on your skin type and goals.",
+          heading: "Dermatologist-Designed Medifacials",
+          body: "Relax. Rejuvenate. Reveal your glow with dermatologist-designed medifacials tailored for your skin.",
         },
         {
-          heading: "Best for",
-          body: "Dull skin, event glow, mild textural concerns, dehydration, and people looking for supervised rejuvenation with minimal downtime.",
+          heading: "Who They Are For",
+          body: "These medifacials are suited for pre-event glow, dull skin, oily or acne-prone skin, acne marks, pigmentation, tan, uneven tone, mature dry aging skin, and skin maintenance.",
         },
         {
           heading: "Why Skin Sattva",
-          body: "All protocols are curated by dermatologist supervision, helping avoid aggressive over-treatment and ensuring safer, more sustainable skin improvements.",
+          body: "The medifacial protocols are medical grade and tailor-made by Dr Shrenik, combining skin-focused steps, serums, peels, masks, Korean machines, and device-based treatment for visible results.",
         },
       ],
-      benefits: ["Healthy glow", "Better hydration", "Refined texture", "Minimal downtime"],
+      pointSections: [
+        {
+          heading: "Main Highlights",
+          points: [
+            "Relax. Rejuvenate. Reveal your glow.",
+            "Dermatologist-designed medifacials are tailored for your skin.",
+            "Medical grade facials are specially designed by Dr Shrenik.",
+            "They offer a spa-like experience with actual visible results.",
+            "They are suitable before events.",
+            "They also help maintain skin quality.",
+          ],
+        },
+        {
+          heading: "Depending on the Concern",
+          points: [
+            "Basic Hydraglow Facial is ideal for dull, tired skin and pre-event glow.",
+            "Clear Skin Ritual Facial is ideal for oily or acne-prone skin and acne marks.",
+            "Radiance Revive Facial is ideal for pigmentation, tan, and uneven tone.",
+            "Anti-Age Luxe Facial is ideal for mature, dry, aging skin.",
+            "Hollywood Facial or Carbon Peel is ideal for tanning and pigmentation.",
+            "Redcarpet Medifacial is ideal for tanning and pigmentation.",
+          ],
+        },
+        {
+          heading: "Important Treatment Steps",
+          points: [
+            "Cleansing and Jet Spray prepare the skin.",
+            "Cavitation and Hydradermabrasion support deep cleansing and exfoliation.",
+            "Electroporation helps infuse active serums.",
+            "Vitamin C, glow, azelaic, glutathione, brightening, collagen booster, and peptide serums are used based on the concern.",
+            "Cold Hammer and Hyaluronic Serum calm and hydrate the skin.",
+            "Peels such as lactic, salicylic, lightening, and carbon peel are chosen depending on the treatment.",
+            "RF Skin Tightening supports anti-aging protocols.",
+            "Laser blasting and laser dual toning are included in selected facials.",
+            "Brightening, charcoal, peptide infusion, and Korean brightening masks are used depending on the protocol.",
+          ],
+        },
+        {
+          heading: "Why Choose Skin Sattva Medifacials?",
+          points: [
+            "Treatments are tailor-made instead of one-size-fits-all.",
+            "Each facial is selected according to skin concern.",
+            "The experience feels relaxing while still being result-oriented.",
+            "Protocols combine medical-grade products and device-based steps.",
+            "They are a strong option for event glow, maintenance, pigmentation support, acne-prone skin, and anti-aging care.",
+          ],
+        },
+      ],
+      comparisonTable: {
+        title: "Medifacial Options",
+        headers: ["Facial Name", "Ideal For", "Key Steps", "Duration"],
+        rows: [
+          [
+            "Basic Hydraglow Facial",
+            "Dull, tired skin; pre-event glow",
+            "Cleansing; Jet Spray; Cavitation; Hydradermabrasion; Vit C/Glow Serum + Electroporation; Cold Hammer + Hyaluronic Serum; Lactic Peel",
+            "30 mins",
+          ],
+          [
+            "Clear Skin Ritual Facial",
+            "Oily/acne-prone skin; acne marks",
+            "Cleansing; Jet Spray; Comedone Extraction; Hydradermabrasion; Azelaic Serum; Salicylic Peel; Cold Hammer; Charcoal Mask",
+            "45 mins",
+          ],
+          [
+            "Radiance Revive Facial",
+            "Pigmentation; tan; uneven tone",
+            "Cleansing; Jet Spray; Cavitation; Hydradermabrasion; Glutathione/Brightening Serum; Cold Hammer; Lightening Peel; Brightening Mask",
+            "45 mins",
+          ],
+          [
+            "Anti-Age Luxe Facial",
+            "Mature, dry, aging skin",
+            "All Hydraglow steps; Collagen Booster Serum; RF Skin Tightening; Peptide Infusion Mask",
+            "50 mins",
+          ],
+          [
+            "Hollywood Facial (Carbon Peel)",
+            "Tanning and pigmentation",
+            "Cleansing; Jet Spray; Electroporation; Carbon Gel application; Laser Blasting",
+            "30 mins",
+          ],
+          [
+            "Redcarpet Medifacial",
+            "Tanning and pigmentation",
+            "Cleansing; Jet Spray; Cavitation; Hydradermabrasion; Laser dual toning; Korean brightening Mask",
+            "60 mins",
+          ],
+        ],
+      },
+      showComparisonTableWithPoints: true,
+      benefits: ["Spa-like experience with visible results", "Tailor-made by Dr Shrenik", "Pre-event glow", "Skin maintenance", "Concern-based protocols", "Medical-grade facial steps"],
       supportImage: "/images/service-detail/medifacials-detail.jpg",
     },
   },
@@ -695,23 +1044,119 @@ const allServices = [
     category: "aesthetics",
     shortDescription: "Multi-modal scar revision using peels, microneedling and device-based protocols.",
     content: {
+      highlightText: "Don't Let Acne Scars Tell Your Story",
+      leadCta: {
+        label: "Book Your Consultation",
+        to: "/contact#booking-form-section",
+      },
       overview:
-        "Acne scars can be significantly improved with staged treatment planning. Because scar types vary, Skin Sattva uses combination protocols customized to scar depth, skin type, and pigmentation tendency.",
+        "Acne, if left untreated, can leave scars which are considered permanent. Some individuals are left with depressions and uneven textured skin, and creams do not work on those scars. Treatments like Fractional CO2, MNRF, subcision, and microneedling can help reduce the depth and appearance of scars.",
       sections: [
         {
-          heading: "How we treat acne scars",
-          body: "Treatment may include microneedling, chemical peels, laser-based resurfacing, and texture-focused combinations to improve scar depth and skin smoothness progressively.",
+          heading: "Advanced MNRF Treatment",
+          body: "At Skin Sattva Skin & Hair Clinic, we offer advanced Microneedling Radiofrequency (MNRF) treatment to improve acne scars safely and effectively. Using the advanced Cellina-PR MNRF system, we target scars deep within the skin to stimulate collagen remodeling and smoothen the skin surface.",
         },
         {
-          heading: "Treatment planning",
-          body: "Sessions are scheduled in phases with recovery-safe gaps. Combination therapy helps address both scar texture and post-acne pigmentation for balanced results.",
+          heading: "Advanced Technology: Cellina-PR MNRF",
+          body: "Scar treatments are performed using the Cellina-PR Microneedling Radiofrequency (MNRF) system, designed to treat acne scars with high precision and controlled energy delivery.",
         },
         {
-          heading: "Who can undergo",
-          body: "People with persistent acne scars, pitted marks, or rough post-acne texture who want dermatologist-guided correction can undergo this treatment after assessment.",
+          heading: "Who Can Benefit?",
+          body: "MNRF is suitable for patients with acne scars such as rolling and boxcar scars, enlarged pores, uneven skin texture, early skin laxity, and stretch marks.",
         },
       ],
-      benefits: ["Smoother skin texture", "Reduced scar visibility", "Improved tone uniformity", "Progressive measurable results"],
+      pointSections: [
+        {
+          heading: "Don't Let Acne Scars Tell Your Story",
+          points: [
+            "Acne, if left untreated, can leave scars which are considered permanent.",
+            "Some individuals are left with depressions and uneven textured skin.",
+            "No creams will work on those scars.",
+            "Treatments like Fractional CO2, MNRF, subcision, and microneedling can help reduce the depth and appearance of scars.",
+            "At Skin Sattva Skin & Hair Clinic, advanced Microneedling Radiofrequency (MNRF) treatment is used to improve acne scars safely and effectively.",
+          ],
+        },
+        {
+          heading: "Machine Highlight: Cellina-PR MNRF System",
+          points: [
+            "Skin Sattva uses the advanced Cellina-PR MNRF system.",
+            "The machine targets scars deep within the skin.",
+            "It stimulates collagen remodeling.",
+            "It helps smoothen the skin surface.",
+            "Scar treatments are performed with high precision and controlled energy delivery.",
+          ],
+        },
+        {
+          heading: "Advanced Technology: Cellina-PR MNRF",
+          points: [
+            "Cellina-PR Microneedling Radiofrequency (MNRF) is designed to treat acne scars with high precision.",
+            "Controlled Depth and Intensity: the device allows precise adjustment of needle depth.",
+            "Controlled Depth and Intensity: RF intensity can be customized based on scar type and depth.",
+            "RF Subcision Technology: Cellina-PR delivers radiofrequency-assisted subcision.",
+            "RF Subcision Technology helps break fibrous scar bands beneath the skin that pull scars downward.",
+            "This releases the scar and allows smoother skin remodeling.",
+          ],
+        },
+        {
+          heading: "How MNRF Improves Scars",
+          points: [
+            "Microneedling RF works through two powerful mechanisms.",
+            "Microneedling stimulation: tiny insulated needles create micro-channels.",
+            "These micro-channels trigger the skin's natural healing response.",
+            "Radiofrequency energy: RF heat is delivered deep into the dermis.",
+            "RF heat stimulates collagen and elastin production.",
+            "This gradually improves scar depth and skin texture.",
+            "Over time, the process rebuilds skin structure and smoothens depressed scars.",
+          ],
+        },
+        {
+          heading: "Important Advantages of MNRF Treatment",
+          points: [
+            "Effective treatment for deep acne scars.",
+            "RF subcision helps release deep scar bands.",
+            "Less downtime compared to fractional CO2 laser.",
+            "Safe for Indian skin types with lower risk of pigmentation.",
+            "Improves skin texture and firmness.",
+            "With a proper treatment plan, up to 60-70% improvement in acne scars can be achieved.",
+          ],
+        },
+        {
+          heading: "Number of Sessions Required",
+          points: [
+            "Scar improvement is gradual and requires multiple sessions.",
+            "Most patients need 4-6 sessions.",
+            "Sessions are spaced 4-6 weeks apart for optimal results.",
+            "The exact number depends on the type and severity of scars.",
+          ],
+        },
+        {
+          heading: "Downtime After Treatment",
+          points: [
+            "MNRF involves minimal downtime compared to CO2 laser resurfacing.",
+            "Most individuals can resume normal activities within 24-48 hours.",
+          ],
+        },
+        {
+          heading: "Who Can Benefit?",
+          points: [
+            "Patients with acne scars can benefit.",
+            "Rolling scars and boxcar scars can be treated.",
+            "Enlarged pores can be improved.",
+            "Uneven skin texture can be improved.",
+            "Early skin laxity can be treated.",
+            "Stretch marks can also be treated.",
+          ],
+        },
+        {
+          heading: "Book Your Consultation",
+          points: [
+            "If acne scars are affecting your confidence, advanced dermatology treatments can significantly improve skin texture.",
+            "Visit Skin Sattva Skin & Hair Clinic for personalized scar reduction treatments.",
+            "Start your journey toward smoother, healthier skin today.",
+          ],
+        },
+      ],
+      benefits: ["Cellina-PR MNRF system", "RF subcision technology", "Deep acne scar improvement", "Less downtime than CO2 laser", "Safe for Indian skin types", "Up to 60-70% improvement with a proper plan"],
       supportImage: "/images/service-detail/scar-reduction-support.jpg",
       beforeAfterImages: [
         { src: "/images/service-detail/scar-ba-1.jpg", alt: "Scar reduction before and after result 1" },
@@ -987,23 +1432,146 @@ const allServices = [
     category: "aesthetics",
     shortDescription: "Laser and peel-based protocols for melasma and uneven tone management.",
     content: {
+      highlightText: "Clearer Skin Starts Here",
+      leadCta: {
+        label: "Book Your Consultation",
+        to: "/contact#booking-form-section",
+      },
       overview:
-        "Pigmentation reduction treatment is designed for uneven tone, tanning, dark patches, and melasma-prone skin using medically supervised protocols with recurrence prevention planning.",
+        "Advanced Pigmentation Reduction at Skin Sattva is designed to safely reduce dark patches and restore a clearer, healthier complexion. Excess melanin can lead to dark spots, melasma, acne marks, and uneven skin tone, making skin appear dull and tired. These concerns often develop due to sun exposure, acne, hormonal changes, or aging.",
       sections: [
         {
-          heading: "Assessment first",
-          body: "Pigmentation type and depth are evaluated before choosing treatment, because epidermal, dermal, and mixed pigmentation need different approaches.",
+          heading: "What Causes Pigmentation?",
+          body: "Pigmentation occurs when the skin produces excess melanin, leading to dark patches or uneven skin tone. Common concerns include melasma, acne marks (post-inflammatory pigmentation), sun spots and tanning, freckles, and uneven skin tone.",
         },
         {
-          heading: "Treatment approach",
-          body: "Protocols may combine chemical peels, laser toning, and prescription skincare to reduce melanin overload and improve overall skin clarity.",
+          heading: "Our Approach",
+          body: "At Skin Sattva, we analyse the skin and curate the right treatment plan for the underlying pigmentation. Our approach combines good routine skin care, medical treatments, and advanced lasers.",
         },
         {
-          heading: "Maintenance",
-          body: "Sun protection and maintenance skincare are integrated into the plan to reduce relapse and sustain long-term tone improvement.",
+          heading: "Expected Results",
+          body: "With the right treatment plan, patients can experience reduction in dark spots and patches, brighter clearer skin, more even skin tone, improved skin texture, and healthy skin glow. Results develop gradually over multiple sessions for safe and lasting improvement. About 5-6 sessions are required to see the desired results.",
         },
       ],
-      benefits: ["Brighter even tone", "Reduced dark patches", "Melasma support", "Long-term maintenance guidance"],
+      pointSections: [
+        {
+          heading: "Advanced Pigmentation Reduction at Skin Sattva",
+          points: [
+            "Melanin is a pigment normally present in our skin which gives a unique skin color.",
+            "When melanin becomes excess, dark spots, melasma, acne marks, and uneven skin tone can make skin appear dull and tired.",
+            "These concerns often develop due to sun exposure, acne, hormonal changes, or aging.",
+            "At Skin Sattva Skin & Hair Clinic, Davanagere, advanced treatments are designed to safely reduce dark patches.",
+            "The treatment helps restore a clearer, healthier complexion.",
+            "The approach combines good routine skin care, medical treatments, and advanced lasers.",
+          ],
+        },
+        {
+          heading: "What Causes Pigmentation?",
+          points: [
+            "Pigmentation occurs when the skin produces excess melanin.",
+            "Excess melanin leads to dark patches or uneven skin tone.",
+            "Common concerns include melasma.",
+            "Common concerns include acne marks or post-inflammatory pigmentation.",
+            "Common concerns include sun spots and tanning.",
+            "Common concerns include freckles.",
+            "Common concerns include uneven skin tone.",
+          ],
+        },
+        {
+          heading: "Personalized Treatment Planning",
+          points: [
+            "At Skin Sattva, the skin is analysed before planning pigmentation treatment.",
+            "The right treatment plan is curated based on the underlying pigmentation.",
+            "Treatment options include chemical peels.",
+            "Treatment options include skin polishing.",
+            "Treatment options include Q Switched Nd:YAG laser.",
+            "Treatment options include lightening medifacials.",
+            "Treatment options include microneedling face PRP.",
+            "Treatment options include Exosomes.",
+          ],
+        },
+        {
+          heading: "Chemical Peels",
+          points: [
+            "Imported Mediderma peels are used.",
+            "These peels are gentle on the skin but highly effective in reducing pigmentation.",
+            "Basic peels include glycolic, lactic, and salicylic peels.",
+            "Advanced peels include NMF, Yellow peel, and black peel.",
+            "Cosmelan peel is available for resistant melasma.",
+            "Peel selection depends upon the condition.",
+          ],
+        },
+        {
+          heading: "Q-Switched Laser Toning",
+          points: [
+            "Tanning, melasma, and acne spots can be reduced using Pastelle SE Q Switched Nd:YAG Laser.",
+            "This next-generation laser technology precisely targets excess pigment.",
+            "The surrounding skin is kept safe during treatment.",
+            "The treatment is personally done by the Dermatologist with utmost care and precision.",
+          ],
+        },
+        {
+          heading: "Key Advantages of Laser Technology",
+          points: [
+            "PTP Mode (Photoacoustic Twin Pulse) breaks down pigment particles using ultra-short twin pulses.",
+            "PTP Mode uses minimal heat, reducing the risk of irritation or post-treatment pigmentation.",
+            "Top-Hat Beam Technology delivers uniform laser energy across the skin surface.",
+            "Top-Hat Beam Technology prevents hot spots.",
+            "It ensures safer treatments for Indian skin types.",
+            "It allows effective pigmentation reduction with minimal downtime and excellent safety.",
+          ],
+        },
+        {
+          heading: "Medi-Facials for Skin Brightening",
+          points: [
+            "Skin Sattva offers high-quality medi-facials curated by Dr Shrenik.",
+            "These treatments help improve skin brightness, hydration, and glow.",
+            "They support pigmentation treatment.",
+            "The treatment uses Korean machines.",
+            "Lightening serums are infused into the skin.",
+            "Dead skin is gently exfoliated to give a healthy glow.",
+            "It is best suited for dull skin with mild pigmentation.",
+            "It is a good option before an upcoming event.",
+          ],
+        },
+        {
+          heading: "PDRN and Exosomes",
+          points: [
+            "Skin Sattva incorporates advanced skin regenerative therapies such as PDRN and Exosomes.",
+            "These therapies enhance pigmentation treatment outcomes.",
+            "PDRN (Polydeoxyribonucleotide) helps repair damaged skin.",
+            "PDRN helps reduce inflammation.",
+            "PDRN improves overall skin quality.",
+            "PDRN supports gradual lightening of pigmentation and improves skin radiance.",
+            "Exosome therapy delivers powerful cellular signals.",
+            "Exosomes promote skin regeneration.",
+            "Exosomes improve collagen production.",
+            "Exosomes help restore a healthier, brighter skin tone.",
+          ],
+        },
+        {
+          heading: "Why Choose Skin Sattva?",
+          points: [
+            "Customised high quality treatments.",
+            "Advanced Korean Pastelle-SE laser for pigmentation.",
+            "Safe protocols for Indian skin types.",
+            "Professional and luxurious environment.",
+          ],
+        },
+        {
+          heading: "Expected Results",
+          points: [
+            "Reduction in dark spots and patches.",
+            "Brighter, clearer skin.",
+            "More even skin tone.",
+            "Improved skin texture.",
+            "Healthy skin glow.",
+            "Results develop gradually over multiple sessions for safe and lasting improvement.",
+            "About 5-6 sessions are required to see the desired results.",
+          ],
+        },
+      ],
+      benefits: ["Reduction in dark spots and patches", "Brighter clearer skin", "More even skin tone", "Improved skin texture", "Healthy skin glow", "Safe protocols for Indian skin types"],
       supportImage: "/images/service-detail/pigmentation-support.jpg",
       beforeAfterImages: [
         { src: "/images/service-detail/pigmentation-ba-1.jpg", alt: "Pigmentation reduction before and after result 1" },
@@ -1120,6 +1688,255 @@ const allServices = [
   },
 ];
 
+const documentServiceContentOverrides = {
+  "acne-control-therapy": {
+    overview:
+      "Acne is a skin disorder affecting both males and females usually between 15-30 years of age, but it can affect or appear at any age. It is mainly seen on the face followed by the chest, back, and arms. It happens due to increased oil secretion and blocking of pores by oil and dead skin under the influence of hormones. There are multiple factors which can aggravate or precipitate acne.",
+    sections: [
+      {
+        heading: "What is Acne (Pimples)?",
+        body: "It is a skin disorder affecting both males and females usually between 15-30 years of age but can affect or appear at any age. It is mainly seen on face followed by chest, back and arms. It happens due to increased oil secretion and blocking of pores by oil and dead skin under the influence of hormones. There are multiple factors which can aggravate or precipitate acne.",
+      },
+      {
+        heading: "How is Acne Treated?",
+        body: "Traditionally acne was considered a normal condition which comes and goes during teenage. However, if left untreated it will leave permanent marks or scars which are more difficult to treat. With current advances, it can be safely treated with simple topical and oral medications. Additionally there are newer peel solutions which will reduce the redness and marks associated with the acne. Red light phototherapy is the latest advancement which will kill the bacteriae and reduces the severity of acne within few sessions.",
+      },
+      {
+        heading: "Benefits of Acne Control Treatment",
+        body: "Chemical Peeling helps in exfoliating this dead skin layer and decreases oil secretion, hence helps in faster control of acne. It thus clears out acne from within the pores, decreases melanin content which causes pigmentation, reduces the appearance of new acne, and makes skin rejuvenated with even tone and texture. It is safe and effective.",
+      },
+      {
+        heading: "Why Skin Sattva?",
+        body: "At Skin Sattva, we treat acne holistically. After thorough consultation and examination our doctors will recommend a customised plan which will be a combination of topical oral and procedural treatments which will control the acne and reduce the marks associated with them. Our acne control treatment includes chemical peels and Intense Pulsed Light for a total of 6-8 sessions for best results depending upon the severity and grade of acne. Lifestyle changes and diet plan will be provided so that there will less chance of recurrence. All our treatments have no downtime and one can resume their work immediately. The treatment duration lasts for 30-40 minutes. There can be mild tingling sensation which is temporary and there are absolutely no long-term side effects.",
+      },
+      {
+        heading: "Who Can Get It Done?",
+        body: "Anyone with pimples/acne which are stubborn and have tendency to leave marks or pigmentation and scars can undergo this treatment.",
+      },
+    ],
+    pointSections: [
+      {
+        heading: "What is Acne (Pimples)?",
+        points: [
+          "Acne is a skin disorder affecting both males and females, usually between 15-30 years of age.",
+          "It can affect or appear at any age.",
+          "It is mainly seen on the face, followed by the chest, back, and arms.",
+          "It happens due to increased oil secretion and blocking of pores by oil and dead skin under the influence of hormones.",
+          "There are multiple factors which can aggravate or precipitate acne.",
+        ],
+      },
+      {
+        heading: "How is Acne Treated?",
+        points: [
+          "Traditionally acne was considered a normal condition which comes and goes during teenage.",
+          "If left untreated, acne can leave permanent marks or scars which are more difficult to treat.",
+          "With current advances, acne can be safely treated with simple topical and oral medications.",
+          "Newer peel solutions help reduce redness and marks associated with acne.",
+          "Red light phototherapy helps kill bacteriae and reduces the severity of acne within few sessions.",
+        ],
+      },
+      {
+        heading: "Benefits of Acne Control Treatment",
+        points: [
+          "Chemical Peeling helps exfoliate the dead skin layer.",
+          "It decreases oil secretion, helping in faster control of acne.",
+          "It clears acne from within the pores.",
+          "It decreases melanin content which causes pigmentation.",
+          "It reduces the appearance of new acne.",
+          "It makes skin rejuvenated with even tone and texture.",
+          "It is safe and effective.",
+        ],
+      },
+      {
+        heading: "Why Skin Sattva?",
+        points: [
+          "At Skin Sattva, acne is treated holistically.",
+          "After thorough consultation and examination, doctors recommend a customised plan.",
+          "The plan combines topical, oral, and procedural treatments to control acne and reduce associated marks.",
+          "Acne control treatment includes chemical peels and Intense Pulsed Light.",
+          "A total of 6-8 sessions are recommended for best results depending upon acne severity and grade.",
+          "Lifestyle changes and diet plan are provided to reduce chances of recurrence.",
+          "Treatments have no downtime and patients can resume work immediately.",
+          "Treatment duration lasts for 30-40 minutes.",
+          "There can be mild tingling sensation which is temporary.",
+          "There are absolutely no long-term side effects.",
+        ],
+      },
+      {
+        heading: "Who Can Get It Done?",
+        points: [
+          "Anyone with pimples/acne which are stubborn can undergo this treatment.",
+          "It is suitable when acne has a tendency to leave marks, pigmentation, or scars.",
+        ],
+      },
+    ],
+    benefits: [
+      "Exfoliates dead skin layer",
+      "Decreases oil secretion",
+      "Clears acne from within the pores",
+      "Decreases pigmentation-causing melanin content",
+      "Reduces the appearance of new acne",
+      "Rejuvenates skin with even tone and texture",
+    ],
+  },
+  psoriasis: {
+    overview:
+      "Psoriasis is a chronic skin condition that presents as red scaly patches on scalp, arms, legs and back. The exact cause of it is not known. However, there are newer treatments available in modern medicine which will keep the disease under control and prevent recurrences.",
+    sections: [
+      {
+        heading: "How We Treat Psoriasis",
+        body: "At Skin Sattva, we treat Psoriasis with combination of topical creams, oral medications and NBUVB. This newer treatment is devoid of side effects and can control the disease within few weeks. It is best suited for psoriasis that has affected a large body parts.",
+      },
+      {
+        heading: "Our NBUVB Protocol",
+        body: "Skin Sattva has latest Speigel series NBUVB therapy for psoriasis. One has to visit the centre every week for up to 12-16 weeks to see complete remission or cure. Regular follow ups are required to keep the disease under control.",
+      },
+      {
+        heading: "Lifestyle Support",
+        body: "Lifestyle lessons and dietary advice will be provided to all those who visit our centre. Visit today to know more about the treatments available at Skin Sattva for Psoriasis.",
+      },
+    ],
+    pointSections: [
+      {
+        heading: "Psoriasis",
+        points: [
+          "Psoriasis is a chronic skin condition that presents as red scaly patches on scalp, arms, legs, and back.",
+          "The exact cause of psoriasis is not known.",
+          "Newer treatments available in modern medicine help keep the disease under control.",
+          "These treatments also help prevent recurrences.",
+        ],
+      },
+      {
+        heading: "How We Treat Psoriasis",
+        points: [
+          "At Skin Sattva, Psoriasis is treated with a combination of topical creams, oral medications, and NBUVB.",
+          "This newer treatment is devoid of side effects.",
+          "It can control the disease within few weeks.",
+          "It is best suited for psoriasis that has affected large body parts.",
+        ],
+      },
+      {
+        heading: "NBUVB Protocol",
+        points: [
+          "Skin Sattva has latest Speigel series NBUVB therapy for psoriasis.",
+          "One has to visit the centre every week for up to 12-16 weeks.",
+          "This protocol helps patients see complete remission or cure.",
+          "Regular follow ups are required to keep the disease under control.",
+        ],
+      },
+      {
+        heading: "Lifestyle Support",
+        points: [
+          "Lifestyle lessons are provided to all those who visit the centre.",
+          "Dietary advice is also provided.",
+          "Visit today to know more about the treatments available at Skin Sattva for Psoriasis.",
+        ],
+      },
+    ],
+    benefits: [
+      "Controls the disease within few weeks",
+      "Suited for large body part involvement",
+      "Latest Speigel series NBUVB therapy",
+      "Weekly treatment protocol for 12-16 weeks",
+      "Regular follow ups for disease control",
+      "Lifestyle lessons and dietary advice",
+    ],
+  },
+  vitiligo: {
+    overview:
+      "Vitiligo is a condition where the skin loses its color, causing white patches. It can affect anyone, but it often has a bigger impact on people with darker skin, as the contrast is more noticeable. This can lead to emotional challenges like low self-esteem, anxiety, and social isolation. It is considered an autoimmune condition where your immune cells attack the colour producing cells melanocytes.",
+    sections: [
+      {
+        heading: "Modern Treatment Breakthroughs",
+        body: "There has been no satisfactory treatment till now for this condition. However, newer treatments like NBUVB (Narrow Band Ultraviolet B) and Excimer light has revolutionized the outcome in vitiligo. At Skin Sattva we not only provide medical support but also emotional and psychological support which will in turn help in regaining the colour as well as the confidence.",
+      },
+      {
+        heading: "Our Phototherapy Protocol",
+        body: "Skin Sattva has the latest FDA approved whole body NBUVB unit, which is considered the most powerful stimulus for repigmentation. It not only brings the colour back on white patches but also prevent the spread of the disease to the other parts of the body. For small patches, we have the latest targeted phototherapy in the form of Excimer lamp which will bring back the color in 10-20 sessions. Both these treatments are given twice in a week or at least once in a week.",
+      },
+      {
+        heading: "Home-Based Maintenance",
+        body: "Once the colour is regained or 80% pigmentation is achieved, home bases phototherapy devices are given to our patients to be used at their home.",
+      },
+      {
+        heading: "Advantages of Phototherapy",
+        body: "Stimulates Melanin Production: UVB Phototherapy (narrowband or broadband) is particularly effective in stimulating the melanocytes in depigmented areas of the skin, promoting the repigmentation process. The UV light can help stimulate the production of melanin, the pigment that gives skin its color.\n\nNon-Invasive Treatment: Phototherapy is a non-invasive treatment option that does not require surgery or systemic medications, which may have more significant side effects.\n\nTargeted Treatment: Phototherapy can be applied to specific areas of the body where vitiligo is present, offering a targeted approach to repigmenting the skin, rather than affecting the entire body. This is especially beneficial for people with localized patches of vitiligo.\n\nEffective for Both Small and Large Patches: While phototherapy is most commonly used for smaller patches of vitiligo, it can also be effective for larger areas when combined with other treatments, offering flexibility in managing the condition.\n\nSafe and Controlled: Phototherapy is usually administered under medical supervision, ensuring that the treatment is safe and that the right amount of UV exposure is used to minimize the risk of side effects, such as burning or premature aging of the skin.\n\nReduced Risk of Side Effects: When used correctly and under professional guidance, phototherapy has fewer side effects compared to oral medications or other systemic treatments. It also avoids the use of steroids, which can have long-term risks when used in the treatment of vitiligo.\n\nBetter Tolerance and Fewer Risks: Compared to more aggressive treatments, such as systemic immunosuppressive drugs, phototherapy generally has fewer adverse effects, making it a preferable option for long-term management.\n\nNo Long-Term Commitment for Maintenance: Once significant repigmentation is achieved, some patients may only need maintenance treatments at periodic intervals to maintain the results.",
+      },
+      {
+        heading: "Why Skin Sattva?",
+        body: "Visit us to improve your appearance and boost your confidence.",
+      },
+    ],
+    pointSections: [
+      {
+        heading: "Vitiligo",
+        points: [
+          "Vitiligo is a condition where the skin loses its color, causing white patches.",
+          "It can affect anyone.",
+          "It often has a bigger impact on people with darker skin because the contrast is more noticeable.",
+          "This can lead to emotional challenges like low self-esteem, anxiety, and social isolation.",
+          "It is considered an autoimmune condition where immune cells attack the colour producing cells, melanocytes.",
+        ],
+      },
+      {
+        heading: "Modern Treatment Breakthroughs",
+        points: [
+          "There has been no satisfactory treatment till now for this condition.",
+          "Newer treatments like NBUVB (Narrow Band Ultraviolet B) and Excimer light have revolutionized the outcome in vitiligo.",
+          "At Skin Sattva, medical support is provided along with emotional and psychological support.",
+          "This support helps in regaining colour as well as confidence.",
+        ],
+      },
+      {
+        heading: "NBUVB and Excimer Phototherapy",
+        points: [
+          "Skin Sattva has the latest FDA approved whole body NBUVB unit.",
+          "Whole body NBUVB is considered the most powerful stimulus for repigmentation.",
+          "It brings colour back on white patches.",
+          "It also helps prevent the spread of the disease to other parts of the body.",
+          "For small patches, Skin Sattva uses targeted phototherapy in the form of Excimer lamp.",
+          "Excimer lamp can bring back color in 10-20 sessions.",
+          "Both treatments are given twice in a week or at least once in a week.",
+          "Once colour is regained or 80% pigmentation is achieved, home based phototherapy devices are given to patients for use at home.",
+        ],
+      },
+      {
+        heading: "Advantages of Phototherapy",
+        points: [
+          "Stimulates Melanin Production: UVB Phototherapy is effective in stimulating melanocytes in depigmented areas of the skin.",
+          "The UV light helps stimulate production of melanin, the pigment that gives skin its color.",
+          "Non-Invasive Treatment: Phototherapy does not require surgery or systemic medications.",
+          "Targeted Treatment: Phototherapy can be applied to specific areas where vitiligo is present.",
+          "Targeted treatment is especially beneficial for localized patches of vitiligo.",
+          "Effective for Both Small and Large Patches: it can be effective for smaller patches and larger areas when combined with other treatments.",
+          "Safe and Controlled: treatment is administered under medical supervision.",
+          "Controlled UV exposure helps minimize risks such as burning or premature aging of the skin.",
+          "Reduced Risk of Side Effects: phototherapy has fewer side effects compared to oral medications or systemic treatments when used correctly.",
+          "It avoids steroid use, which can have long-term risks in vitiligo treatment.",
+          "Better Tolerance and Fewer Risks: compared to systemic immunosuppressive drugs, phototherapy generally has fewer adverse effects.",
+          "No Long-Term Commitment for Maintenance: once significant repigmentation is achieved, some patients may only need periodic maintenance treatments.",
+        ],
+      },
+      {
+        heading: "Why Skin Sattva?",
+        points: [
+          "Visit us to improve your appearance and boost your confidence.",
+        ],
+      },
+    ],
+    benefits: [
+      "Stimulates melanin production",
+      "Non-invasive treatment",
+      "Targeted treatment for localized patches",
+      "Effective for both small and large patches",
+      "Safe and controlled under medical supervision",
+      "Reduced risk of side effects",
+      "Better tolerance and fewer risks",
+      "Periodic maintenance after repigmentation",
+    ],
+  },
+};
+
 const DOC_SERVICE_SLUGS = [
   "acne-control-therapy",
   "chemical-peels",
@@ -1162,7 +1979,14 @@ const DOC_SERVICE_SLUGS = [
   "punch-biopsy",
 ];
 
-export const services = allServices.filter((service) => DOC_SERVICE_SLUGS.includes(service.slug));
+export const services = allServices
+  .filter((service) => DOC_SERVICE_SLUGS.includes(service.slug))
+  .map((service) => ({
+    ...service,
+    content: documentServiceContentOverrides[service.slug]
+      ? { ...service.content, ...documentServiceContentOverrides[service.slug] }
+      : service.content,
+  }));
 
 export const getServiceBySlug = (slug) => services.find((service) => service.slug === slug);
 export const getServicesByCategory = (category) => services.filter((service) => service.category === category);
